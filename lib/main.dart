@@ -29,7 +29,10 @@ class Fooderlich extends StatelessWidget {
           ),
         ),
         // TODO: Style the body text
-        body: const Center(child: Text('Let\'s get cooking 👩‍🍳')),
+        body: Center(
+          child: Text('Let\'s get cooking 👩‍🍳',
+              style: theme.textTheme.headline1),
+        ),
       ),
     );
   }
