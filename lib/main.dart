@@ -17,11 +17,17 @@ class Fooderlich extends StatelessWidget {
     // 3
     return MaterialApp(
       // TODO: Add theme
+      theme: theme,
       title: 'Fooderlich',
       // 4
       home: Scaffold(
         // TODO: Style the title
-        appBar: AppBar(title: const Text('Fooderlich')),
+        appBar: AppBar(
+          title: Text(
+            'Fooderlich',
+            style: theme.textTheme.headline6,
+          ),
+        ),
         // TODO: Style the body text
         body: const Center(child: Text('Let\'s get cooking 👩‍🍳')),
       ),
