@@ -23,6 +23,7 @@ class AuthorCard extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Row(
         // TODO 3: add alignment
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           // 1
           Row(
