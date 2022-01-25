@@ -15,12 +15,30 @@ class ExploreScreen extends StatefulWidget {
 
 class _ExploreScreenState extends State<ExploreScreen> {
   final mockService = MockFooderlichService();
-
-  scrollListener() {}
+  late ScrollController _controller;
 
   @override
-  initState() {
-    ScrollController scrollController = scrollListener();
+  void initState() {
+    super.initState();
+    _controller = ScrollController();
+    _controller.addListener(_scrollListener);
+  }
+
+  void _scrollListener() {
+    if (_controller.offset >= _controller.position.maxScrollExtent &&
+        !_controller.position.outOfRange) {
+      print('reached the bottom');
+    }
+    if (_controller.offset <= _controller.position.minScrollExtent &&
+        !_controller.position.outOfRange) {
+      print('reached the top!');
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.removeListener(_scrollListener);
+    super.dispose();
   }
 
   @override
