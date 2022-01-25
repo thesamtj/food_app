@@ -30,7 +30,24 @@ class EmptyGroceryScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.headline6,
             ),
             // TODO 6: Add empty screen subtitle
+            const SizedBox(height: 16.0),
+            const Text(
+              'Shopping for ingredients?\n'
+              'Tap the + button to write them down!',
+              textAlign: TextAlign.center,
+            ),
             // TODO 7: Add browse recipes button
+            MaterialButton(
+              textColor: Colors.white,
+              child: const Text('Browse Recipes'),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              color: Colors.green,
+              onPressed: () {
+                // TODO 8: Go to Recipes Tab
+              },
+            ),
           ],
         ),
       ),
