@@ -16,7 +16,19 @@ class EmptyGroceryScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // TODO 4: Add empty image
+            // 1
+            Flexible(
+              // 2
+              child: AspectRatio(
+                aspectRatio: 1 / 1,
+                child: Image.asset('assets/fooderlich_assets/empty_list.png'),
+              ),
+            ),
             // TODO 5: Add empty screen title
+            Text(
+              'No Groceries',
+              style: Theme.of(context).textTheme.headline6,
+            ),
             // TODO 6: Add empty screen subtitle
             // TODO 7: Add browse recipes button
           ],
