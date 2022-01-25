@@ -10,7 +10,18 @@ class GroceryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO 2: Replace with EmptyGroceryScreen
     // TODO 4: Add a scaffold widget
-    return const EmptyGroceryScreen();
+    // 5
+    return Scaffold(
+      // 6
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          // TODO 11: Present GroceryItemScreen
+        },
+      ),
+      // 7
+      body: buildGroceryScreen(),
+    );
   }
 
 // TODO: Add buildGroceryScreen
