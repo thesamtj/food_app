@@ -35,7 +35,26 @@ class TodayRecipeListView extends StatelessWidget {
           Container(
             height: 400,
             // TODO: Add ListView Here
-            color: Colors.grey,
+            // 1
+            color: Colors.transparent,
+// 2
+            child: ListView.separated(
+              // 3
+              scrollDirection: Axis.horizontal,
+              // 4
+              itemCount: recipes.length,
+              // 5
+              itemBuilder: (context, index) {
+                // 6
+                final recipe = recipes[index];
+                return buildCard(recipe);
+              },
+              // 7
+              separatorBuilder: (context, index) {
+                // 8
+                return const SizedBox(width: 16);
+              },
+            ),
           ),
         ],
       ),
