@@ -53,6 +53,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         if (snapshot.connectionState == ConnectionState.done) {
           // 5
           return ListView(
+            controller: _controller,
             // 6
             scrollDirection: Axis.vertical,
             children: [
