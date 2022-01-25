@@ -17,6 +17,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
   final mockService = MockFooderlichService();
 
   @override
+  initState() {
+    ScrollController scrollController;
+  }
+
+  @override
   Widget build(BuildContext context) {
     // 1
     return FutureBuilder(
