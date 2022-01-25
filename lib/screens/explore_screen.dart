@@ -16,9 +16,11 @@ class ExploreScreen extends StatefulWidget {
 class _ExploreScreenState extends State<ExploreScreen> {
   final mockService = MockFooderlichService();
 
+  scrollListener() {}
+
   @override
   initState() {
-    ScrollController scrollController;
+    ScrollController scrollController = scrollListener();
   }
 
   @override
