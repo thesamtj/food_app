@@ -26,7 +26,13 @@ class GroceryTile extends StatelessWidget {
     return Container(
       height: 100.0,
       // TODO 20: Replace this color
-      color: Colors.red,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          // TODO 22: Add Row to group (name, date, importance)
+          // TODO 23: Add Row to group (quantity, checkbox)
+        ],
+      ),
     );
   }
 
