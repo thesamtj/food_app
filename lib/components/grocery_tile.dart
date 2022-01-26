@@ -22,8 +22,7 @@ class GroceryTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO 21: Change this Widget
-    return Container(
+    return SizedBox(
       height: 100.0,
       // TODO 20: Replace this color
       child: Row(
