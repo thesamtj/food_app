@@ -98,6 +98,7 @@ class _GroceryItemScreenState extends State<GroceryItemScreen> {
         child: ListView(
           children: [
             // TODO 13: Add name TextField
+            buildNameField(),
             // TODO 14: Add Importance selection
             // TODO 15: Add date picker
             // TODO 16: Add time picker
