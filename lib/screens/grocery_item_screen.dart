@@ -38,8 +38,7 @@ class _GroceryItemScreenState extends State<GroceryItemScreen> {
   Color _currentColor = Colors.green;
   int _currentSliderValue = 0;
 
-// TODO: Add initState()
-  @override
+@override
   void initState() {
     super.initState();
     // 1
