@@ -13,7 +13,7 @@ class GroceryListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO 26: Replace with ListView
+    
     // 1
     final groceryItems = manager.groceryItems;
 // 2
