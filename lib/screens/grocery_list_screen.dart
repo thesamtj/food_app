@@ -16,7 +16,7 @@ class GroceryListScreen extends StatelessWidget {
     
     // 1
     final groceryItems = manager.groceryItems;
-// 2
+
     return Padding(
       padding: const EdgeInsets.all(16.0),
       // 3
