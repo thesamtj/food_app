@@ -23,7 +23,6 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    // 1
     return Consumer<TabManager>(
       builder: (context, tabManager, child) {
         return Scaffold(
