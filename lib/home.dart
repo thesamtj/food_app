@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
           bottomNavigationBar: BottomNavigationBar(
             selectedItemColor:
                 Theme.of(context).textSelectionTheme.selectionColor,
-            // 3
+            
             currentIndex: tabManager.selectedTab,
             onTap: (index) {
               // 4
