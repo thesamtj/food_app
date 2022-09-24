@@ -12,14 +12,13 @@ class GroceryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
    
     return Scaffold(
-      // 6
+   
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          // TODO 11: Present GroceryItemScreen
-          // 1
+         
           final manager = Provider.of<GroceryManager>(context, listen: false);
-//        // 2
+
           Navigator.push(
             context,
             // 3
