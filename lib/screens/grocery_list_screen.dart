@@ -14,12 +14,12 @@ class GroceryListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    // 1
+   
     final groceryItems = manager.groceryItems;
 
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      // 3
+      
       child: ListView.separated(
         // 4
         itemCount: groceryItems.length,
