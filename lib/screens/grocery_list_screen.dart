@@ -21,26 +21,23 @@ class GroceryListScreen extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       
       child: ListView.separated(
-        // 4
+       
         itemCount: groceryItems.length,
         itemBuilder: (context, index) {
           final item = groceryItems[index];
-          // TODO 28: Wrap in a Dismissable
           
-          // 5
-          // 1
           return Dismissible(
-            // 6
+           
             key: Key(item.id),
-            // 7
+           
             direction: DismissDirection.endToStart,
-            // 8
+           
             background: Container(
                 color: Colors.red,
                 alignment: Alignment.centerRight,
                 child: const Icon(Icons.delete_forever,
                     color: Colors.white, size: 50.0)),
-            // 9
+           
             onDismissed: (direction) {
               // 10
               manager.deleteItem(index);
