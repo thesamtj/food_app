@@ -5,7 +5,7 @@ import '../models/models.dart';
 import '../api/mock_fooderlich_service.dart';
 
 class ExploreScreen extends StatefulWidget {
-  // 1
+ 
 
   ExploreScreen({Key? key}) : super(key: key);
 
