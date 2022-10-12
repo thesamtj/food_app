@@ -49,12 +49,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
       future: mockService.getExploreData(),
      
       builder: (context, AsyncSnapshot<ExploreData> snapshot) {
-        // 4
+        
         if (snapshot.connectionState == ConnectionState.done) {
-          // 5
+          
           return ListView(
             controller: _controller,
-            // 6
+            
             scrollDirection: Axis.vertical,
             children: [
               // 7
