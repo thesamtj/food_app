@@ -39,9 +39,9 @@ class GroceryListScreen extends StatelessWidget {
                     color: Colors.white, size: 50.0)),
            
             onDismissed: (direction) {
-              // 10
+              
               manager.deleteItem(index);
-              // 11
+          
               ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text('${item.name} dismissed')));
             },
@@ -54,7 +54,7 @@ class GroceryListScreen extends StatelessWidget {
                       manager.completeItem(index, change);
                     }
                   }),
-              // 2
+            
               onTap: () {
                 Navigator.push(
                   context,
